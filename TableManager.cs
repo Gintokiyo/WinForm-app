@@ -78,11 +78,11 @@ namespace ProiectMediiVizuale
         }
 
         /// <summary>
-        /// Add team form button
+        /// Add Object button
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void buttonAddTeam_Click(object sender, EventArgs e)
+        private void buttonAddObject_Click(object sender, EventArgs e)
         {
             List<string> labelList;
             ObjectsManager addObjects;
@@ -110,11 +110,11 @@ namespace ProiectMediiVizuale
         }
 
         /// <summary>
-        /// Delete 1 or more teams that we select
+        /// Delete 1 or more objects from the table which we select
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void buttonDeleteTeam_Click(object sender, EventArgs e) //Needs to be fixed for deleting members from a team
+        private void buttonDeleteObject_Click(object sender, EventArgs e) //Needs to be fixed for deleting members from a team
         {
             var listOfIDs = new List<int>();
             int colCount = dataGridViewTable.Columns.Count;
@@ -157,7 +157,7 @@ namespace ProiectMediiVizuale
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void dataGridViewTeams_CellDoubleClick(object sender, DataGridViewCellEventArgs e) //Needs testing
+        private void dataGridViewTable_CellDoubleClick(object sender, DataGridViewCellEventArgs e) //Needs testing
         {
             var selectedCellID = dataGridViewTable.SelectedCells[0].Value;
             var selectedCellName = dataGridViewTable.SelectedCells[1].Value;

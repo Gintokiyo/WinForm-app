@@ -77,7 +77,7 @@ namespace ProiectMediiVizuale
             this.buttonDeleteField.TabIndex = 3;
             this.buttonDeleteField.Text = "Delete";
             this.buttonDeleteField.UseVisualStyleBackColor = true;
-            this.buttonDeleteField.Click += new System.EventHandler(this.buttonDeleteTeam_Click);
+            this.buttonDeleteField.Click += new System.EventHandler(this.buttonDeleteObject_Click);
             // 
             // buttonAddField
             // 
@@ -89,7 +89,7 @@ namespace ProiectMediiVizuale
             this.buttonAddField.TabIndex = 2;
             this.buttonAddField.Text = "Add";
             this.buttonAddField.UseVisualStyleBackColor = true;
-            this.buttonAddField.Click += new System.EventHandler(this.buttonAddTeam_Click);
+            this.buttonAddField.Click += new System.EventHandler(this.buttonAddObject_Click);
             // 
             // dataGridViewTable
             // 
@@ -106,7 +106,7 @@ namespace ProiectMediiVizuale
             this.dataGridViewTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewTable.Size = new System.Drawing.Size(813, 479);
             this.dataGridViewTable.TabIndex = 1;
-            this.dataGridViewTable.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTeams_CellDoubleClick);
+            this.dataGridViewTable.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTable_CellDoubleClick);
             // 
             // MainManager
             // 
