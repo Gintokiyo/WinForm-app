@@ -114,7 +114,7 @@ namespace ProiectMediiVizuale
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void buttonDeleteObject_Click(object sender, EventArgs e) //Needs to be fixed for deleting members from a team
+        private void buttonDeleteObject_Click(object sender, EventArgs e)
         {
             var listOfIDs = new List<int>();
             int colCount = dataGridViewTable.Columns.Count;
@@ -157,7 +157,7 @@ namespace ProiectMediiVizuale
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void dataGridViewTable_CellDoubleClick(object sender, DataGridViewCellEventArgs e) //Needs testing
+        private void dataGridViewTable_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             var selectedCellID = dataGridViewTable.SelectedCells[0].Value;
             var selectedCellName = dataGridViewTable.SelectedCells[1].Value;
